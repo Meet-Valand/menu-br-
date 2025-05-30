@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
-const images = ['/images/bg1.png', '/images/bg2.png', '/images/bg3.png','/images.bg4.png'];
+const images = ['/images/bg1.png', '/images/bg2.png', '/images/bg3.png','/images/bg4.png'];
 
 export default function HeaderCarousel() {
   const [index, setIndex] = useState(0);
