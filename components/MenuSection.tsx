@@ -239,7 +239,16 @@ const categories = [ 'All','New','Fusion', 'Fruit', 'Chocolate', 'Classic'];
 
 export default function MenuSection() {
   const [activeCategory, setActiveCategory] = useState('All');
-  const [selectedItem, setSelectedItem] = useState(null);
+ type MenuItem = {
+  id: number;
+  image: string;
+  name: string;
+  description: string;
+  category: string;
+};
+
+const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null);
+
   const [expandedItems, setExpandedItems] = useState<number[]>([]);
 
   useEffect(() => {
